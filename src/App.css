@@ -1,38 +1,148 @@
+@font-face {
+  font-family: "bmyeonsung";
+  src: url("./font/bmyeonsung_font.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "bmyeonsung";
+  color: #2f2f2f;
+  list-style: none;
+}
+
 .App {
-  text-align: center;
+  background: whitesmoke;
+  overflow: hidden;
+  min-width: 700px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.WhiteText {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MarginTop30 {
+  margin-top: 30px;
+}
+.MarginLeft30 {
+  margin-left: 30px;
+}
+.MarginLeft60 {
+  margin-left: 60px;
+}
+.MarginRight30 {
+  margin-right: 30px;
+}
+.MarginBottom30 {
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 타이틀 */
+.Navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+.TitleImg {
+  background-image: url("./imagefolder/main_banner_img.jpg");
+  background-size: 100%;
+}
+.TitleDiv {
+  background-image: url("./imagefolder/main_banner_img.jpg");
+  background-size: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+.TitleContainer {
+  color: white;
+  text-shadow: 6px 3px 4px gray;
+}
+
+/* 중간 컨텐츠 */
+.Body {
+  text-align: center;
+}
+.ContentsMarginTop {
+  padding-top: 160px;
+}
+.ContentsMarginBottom {
+  padding-bottom: 100px;
+}
+
+.WhoAmI {
+  color: black;
+  overflow: inherit;
+}
+.WhoAmI1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+.WhoAmI1-profile {
+  display: flex;
+  text-align: left;
+  margin-top: 30px;
+}
+.ImgMargin {
+  margin-right: 100px;
+}
+.DivLine {
+  outline: 1px solid gray;
+  width: 1p
+}
+.WhoAmI2-profile {
+  display: flex;
+  text-align: left;
+  margin-top: 30px;
+}
+.WhoAmI2-profile-ul {
+  margin-left: 30px;
+}
+.WhoAmI2-profile-ul li {
+  padding-bottom: 30px;
+}
+
+/* 
+.CAREER {
+  margin-bottom: 1px;
+}
+
+
+.SKILLS {
+  margin-bottom: 1px;
+}
+*/
+
+.PROJECT {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+
+
+.ProjectCardDiv {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 400px;
+  display: inline-flex;
+}
+
+.BottomLink {
+  margin: 30px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+/* 하단 */
+.FooterDiv {
+  width: 100%;
+  background: #ddd;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
 }
